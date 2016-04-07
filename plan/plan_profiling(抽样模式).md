@@ -74,31 +74,7 @@ QtGui4.dll库的QImage对象的保存png图片的效率不高。但目前没针�
 模块内部功能函数的独占运行时间占比情况如图中所示，PowerMapRender.dll内部的函数的抽样独占时间占比较高的都是QMap的排序和查找的方法，
 而且独占时间占比仅为百分之零点几，所以预计对改模块的优化不会对使服务程序有更为明显的改进。
 
-![jy_powermaprender](./profiling/jy_powermaprender.png)
-
-渲染器析构函数代码:
-
-	SPlanClassColorRender::~SPlanClassColorRender()
-	{
-		QMap<QString, QSharedPointer<thp::coloring::Map> >* pClasses = (QMap<QString, QSharedPointer<thp::coloring::Map> >*)(m_pClasses);
-		delete pClasses;
-		m_pClasses = NULL;
-	}
-
-　　怀疑该段代码效率较低的可能原因有两个
-1. QMap对象是从堆上创建的，可以修改为将QMap从栈上创建；
-2. QMap的析构过程比较耗时。
-
-优化后渲染器析构代码:
-
-	SPlanClassColorRender::~SPlanClassColorRender()
-	{
-	}
-
-下图是对渲染器的析构着色对象优化为从栈上创建Profiling文件的截图，可见优化后渲染器的析构函数独占时间占比降低了40%,整个模块的独占时间占比
-降低了38%。
-
-![jy_powermaprender](./profiling/samplint/jy_powermaprender.png)
+![jy_powermaprender](./profiling/sampling/jy_powermaprender.png)
 
 在PowerMapRender.dll模块中相对来说时间占比较高的绘制线状D对象的原代码:
 	
