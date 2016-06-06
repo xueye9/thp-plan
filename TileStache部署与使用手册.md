@@ -33,9 +33,11 @@ gdal库的全部编译是很复杂的，好在我们只是用gdal的主要功能
 
 使用cmd命令行编译，首先在“开始菜单\所有程序\Microsoft Visual Studio 2008\Visual Studio Tools\ Visual Studio 2008命令提示”，点击“Visual Studio 2008 命令提示”会弹出下面的界面：
 ![](./TileStache/images/gdal_complie1.gif)
+
 然后使用cd命令切换到GDAL源代码目录：
 ![](./TileStache/images/gdal_complie2.gif)
-一次敲入以下命令回车，等待编译结束即可
+
+依次敲入以下命令回车，等待编译结束即可
 nmake -f makefile.vc
 
 nmake -f makefile.vc install
@@ -115,6 +117,7 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 因为TileStache只是用到了这个库，所以我们只要安装到Python环境中就可以了，不对该库做进一步的展开介绍。
 
 在 https://pypi.python.org/pypi/Pillow/3.2.0#downloads 找到自己的安装包直接安装，如下
+
 >![PIL安装](./Tilestache/images/PIL_installer.png)
 
 **双击下载的exe文件进行安装就可以了。**
