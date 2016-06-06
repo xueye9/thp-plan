@@ -147,7 +147,7 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 
 2. 进入下载的源代码目录执行命令**python setup.py install**, 和[Werkzeug](http://werkzeug.pocoo.org)库一样，[Simplejson](https://github.com/simplejson/simplejson)也是
 可选库，但是没有该库TileStache无法安装成功。安装过程如下图：
->![simplejson安装](./Tilestache/images/simplejson_install.png)
+>![simplejson安装](./TileStache/images/simplejson_install.png)
 
 ##[ModestMaps](http://modestmaps.com)安装
 简单了解一下该库，如下是该库的英文描述：
@@ -161,7 +161,8 @@ ModestMaps是一个为那些希望在自己的工程中使用交互地图的开�
 1. 通过git命令工具执行
 >git clone https://github.com/stamen/modestmaps-py.git,这里要注意一点TileStache给出的modestmaps的代码仓库地址(http://github.com/migurski/modestmaps-py)是早期
 版本，我们使用TileStache1.50.1版本需要1.30以上版本的[ModestMaps](http://modestmaps.com)。获取源代码过程如下图:
-![ModestMaps源码下载](./TileStache/images/modestmaps_install1.png)
+
+![ModestMaps源码下载](./TileStache/images/modestmaps_install.png)
 
 2. 进入下载的源代码目录执行命令**python setup.py install**进行安装。
 
