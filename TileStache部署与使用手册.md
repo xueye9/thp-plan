@@ -116,9 +116,9 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 翻译为中文的一起就是这是一个有处理图像能力的Python库，支持多种格式，并且提供高效的图像处理和绘图功能。
 因为TileStache只是用到了这个库，所以我们只要安装到Python环境中就可以了，不对该库做进一步的展开介绍。
 
-在 https://pypi.python.org/pypi/Pillow/3.2.0#downloads 找到自己的安装包直接安装，如下
-
-![PIL安装](https://github.com/xueye9/thp_doc/blob/master/TileStache/images/PIL_installer.png)
+在 https://pypi.python.org/pypi/Pillow/3.2.0#downloads 找到自己的安装包直接安装，如下:
+	
+![PIL安装](./Tilestache/images/PIL_installer.png)
 
 **双击下载的exe文件进行安装就可以了。**
 
