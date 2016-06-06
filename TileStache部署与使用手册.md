@@ -118,7 +118,7 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 
 在 https://pypi.python.org/pypi/Pillow/3.2.0#downloads 找到自己的安装包直接安装，如下:
 	
-![PIL安装](./Tilestache/images/PIL_installer.png)
+![PIL安装](./TileStache/images/PIL_installer.png)
 
 **双击下载的exe文件进行安装就可以了。**
 
@@ -132,7 +132,7 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 >git clone git@github.com:mitsuhiko/werkzeug.git
 
 如下图：
->![werkzeug安装](./Tilestache/images/werkzeug_install.png)
+>![werkzeug安装](./TileStache/images/werkzeug_install.png)
 
 然后进入下载的源码目录下执行命令**python setup.py install**,另外需要说明一下，虽然TileStache官网说对werkzeug库的依赖是可选性的，但是没有该库TileStache无法安装成功。
 
@@ -143,7 +143,7 @@ nmake -f makefile.vc MSVC_VER=1400DEBUG=1
 
 1. 通过git命令工具执行
 >git clone https://github.com/simplejson/simplejson.git,如下图:
-![simplejson安装](./Tilestache/images/simplejson_install.png)
+![simplejson安装](./TileStache/images/simplejson_install.png)
 
 2. 进入下载的源代码目录执行命令**python setup.py install**, 和[Werkzeug](http://werkzeug.pocoo.org)库一样，[Simplejson](https://github.com/simplejson/simplejson)也是
 可选库，但是没有该库TileStache无法安装成功。安装过程如下图：
@@ -161,7 +161,7 @@ ModestMaps是一个为那些希望在自己的工程中使用交互地图的开�
 1. 通过git命令工具执行
 >git clone https://github.com/stamen/modestmaps-py.git,这里要注意一点TileStache给出的modestmaps的代码仓库地址(http://github.com/migurski/modestmaps-py)是早期
 版本，我们使用TileStache1.50.1版本需要1.30以上版本的[ModestMaps](http://modestmaps.com)。获取源代码过程如下图:
-![ModestMaps源码下载](./Tilestache/images/modestmaps_install1.png)
+![ModestMaps源码下载](./TileStache/images/modestmaps_install1.png)
 
 2. 进入下载的源代码目录执行命令**python setup.py install**进行安装。
 
@@ -175,7 +175,7 @@ ModestMaps是一个为那些希望在自己的工程中使用交互地图的开�
 >git clone https://github.com/TileStache/TileStache.git,获取源代码。
 
 2. 进入下载的源代码目录执行命令**python setup.py install**进行安装,如下图：
->![ModestMaps源码下载](./Tilestache/images/TileStache_install1.png)
+>![ModestMaps源码下载](./TileStache/images/TileStache_install1.png)
 
 
 #[TileStache](http://tilestache.org)使用
@@ -279,10 +279,10 @@ ModestMaps是一个为那些希望在自己的工程中使用交互地图的开�
 
 ##示例
 如下图是切片命令正在执行的状态：
-![切片中](./Tilestache/images/tiling.png)
+![切片中](./TileStache/images/tiling.png)
 
 如下是部分切片在输出目录的状态：
-![切片结果](./Tilestache/images/tile_dir.png)
+![切片结果](./TileStache/images/tile_dir.png)
 
 #结语
 至此，部署TileStache和使用TileStache以shape文件为输入以geojson为输出的操作过程介绍完成。TileStache还有其他的一些功能，在本次没有
